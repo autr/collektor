@@ -1,0 +1,352 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5F263241
+P 8300 2550
+F 0 "SW1" H 8300 2785 50  0000 C CNN
+F 1 "SW_SPST" H 8300 2694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 8300 2550 50  0001 C CNN
+F 3 "~" H 8300 2550 50  0001 C CNN
+	1    8300 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5F263C49
+P 8300 2950
+F 0 "SW2" H 8300 3185 50  0000 C CNN
+F 1 "SW_SPST" H 8300 3094 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 8300 2950 50  0001 C CNN
+F 3 "~" H 8300 2950 50  0001 C CNN
+	1    8300 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5F26430C
+P 8300 3350
+F 0 "SW3" H 8300 3585 50  0000 C CNN
+F 1 "SW_SPST" H 8300 3494 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 8300 3350 50  0001 C CNN
+F 3 "~" H 8300 3350 50  0001 C CNN
+	1    8300 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW5
+U 1 1 5F264E21
+P 8300 4150
+F 0 "SW5" H 8300 4385 50  0000 C CNN
+F 1 "SW_SPST" H 8300 4294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 8300 4150 50  0001 C CNN
+F 3 "~" H 8300 4150 50  0001 C CNN
+	1    8300 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F265AB0
+P 8400 4700
+F 0 "#PWR04" H 8400 4450 50  0001 C CNN
+F 1 "GND" H 8405 4527 50  0000 C CNN
+F 2 "" H 8400 4700 50  0001 C CNN
+F 3 "" H 8400 4700 50  0001 C CNN
+	1    8400 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2550 8500 2950
+Wire Wire Line
+	8500 4700 8400 4700
+Connection ~ 8500 2950
+Wire Wire Line
+	8500 2950 8500 3350
+Connection ~ 8500 3350
+Wire Wire Line
+	8500 3350 8500 3750
+Connection ~ 8500 3750
+Wire Wire Line
+	8500 3750 8500 4150
+Connection ~ 8500 4150
+Wire Wire Line
+	8500 4150 8500 4550
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5F26459C
+P 8300 3750
+F 0 "SW4" H 8300 3985 50  0000 C CNN
+F 1 "SW_SPST" H 8300 3894 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 8300 3750 50  0001 C CNN
+F 3 "~" H 8300 3750 50  0001 C CNN
+	1    8300 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5F269332
+P 5100 5300
+F 0 "J1" H 5028 5538 50  0000 C CNN
+F 1 "Conn_Coaxial" H 5028 5447 50  0000 C CNN
+F 2 "lib_fb:rca_angle_RCJ01" H 5100 5300 50  0001 C CNN
+F 3 " ~" H 5100 5300 50  0001 C CNN
+	1    5100 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F26A9B5
+P 5100 5750
+F 0 "#PWR02" H 5100 5500 50  0001 C CNN
+F 1 "GND" H 5105 5577 50  0000 C CNN
+F 2 "" H 5100 5750 50  0001 C CNN
+F 3 "" H 5100 5750 50  0001 C CNN
+	1    5100 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5500 5100 5750
+$Comp
+L lib:Raspberry_Pi_Zero J2
+U 1 1 5F273231
+P 6600 3300
+F 0 "J2" H 6600 4781 50  0000 C CNN
+F 1 "Raspberry_Pi_Zero" H 6600 4690 50  0000 C CNN
+F 2 "lib_fb:Raspberry_Pi_Zero" H 6600 3300 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6600 3300 50  0001 C CNN
+	1    6600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5300 5550 5300
+Wire Wire Line
+	5550 5300 5550 4150
+Wire Wire Line
+	5550 4150 5800 4150
+$Comp
+L power:GND #PWR01
+U 1 1 5F277E42
+P 3900 2300
+F 0 "#PWR01" H 3900 2050 50  0001 C CNN
+F 1 "GND" H 3905 2127 50  0000 C CNN
+F 2 "" H 3900 2300 50  0001 C CNN
+F 3 "" H 3900 2300 50  0001 C CNN
+	1    3900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2800 4350 2500
+Wire Wire Line
+	4350 2500 5500 2500
+Wire Wire Line
+	5500 2500 5500 2900
+Wire Wire Line
+	5500 2900 5800 2900
+Wire Wire Line
+	4450 2800 4450 2600
+Wire Wire Line
+	4450 2600 5450 2600
+Wire Wire Line
+	5450 2600 5450 3300
+Wire Wire Line
+	5450 3300 5800 3300
+Wire Wire Line
+	4550 2800 4550 2700
+Wire Wire Line
+	4550 2700 5350 2700
+Wire Wire Line
+	5350 2700 5350 3100
+Wire Wire Line
+	5350 3100 5800 3100
+Wire Wire Line
+	4750 2800 4750 2000
+Wire Wire Line
+	4750 2000 6100 2000
+Wire Wire Line
+	8100 2550 7600 2550
+Wire Wire Line
+	7600 2550 7600 3400
+Wire Wire Line
+	7600 3400 7400 3400
+Wire Wire Line
+	8100 2950 7650 2950
+Wire Wire Line
+	7650 2950 7650 3500
+Wire Wire Line
+	7650 3500 7400 3500
+Wire Wire Line
+	8100 3350 7700 3350
+Wire Wire Line
+	7700 3350 7700 3600
+Wire Wire Line
+	7700 3600 7400 3600
+Wire Wire Line
+	8100 3750 7700 3750
+Wire Wire Line
+	7700 3750 7700 3700
+Wire Wire Line
+	7700 3700 7400 3700
+Wire Wire Line
+	8100 4150 7600 4150
+Wire Wire Line
+	7600 4150 7600 3800
+Wire Wire Line
+	7600 3800 7400 3800
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5F2919B1
+P 8300 4550
+F 0 "SW6" H 8300 4785 50  0000 C CNN
+F 1 "SW_SPST" H 8300 4694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 8300 4550 50  0001 C CNN
+F 3 "~" H 8300 4550 50  0001 C CNN
+	1    8300 4550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8500 4550
+Wire Wire Line
+	8500 4550 8500 4700
+Wire Wire Line
+	8100 4550 7500 4550
+Wire Wire Line
+	7500 4550 7500 4000
+Wire Wire Line
+	7500 4000 7400 4000
+NoConn ~ 5800 2400
+NoConn ~ 5800 2500
+NoConn ~ 5800 2700
+NoConn ~ 5800 2800
+NoConn ~ 5800 3500
+NoConn ~ 5800 3600
+NoConn ~ 5800 3700
+NoConn ~ 5800 3800
+NoConn ~ 5800 3900
+NoConn ~ 5800 4000
+NoConn ~ 7400 4100
+NoConn ~ 7400 3200
+NoConn ~ 7400 3100
+NoConn ~ 7400 3000
+NoConn ~ 7400 2800
+NoConn ~ 7400 2700
+NoConn ~ 7400 2500
+NoConn ~ 7400 2400
+NoConn ~ 6700 2000
+NoConn ~ 6800 2000
+Wire Wire Line
+	6400 2000 6500 2000
+Connection ~ 6400 2000
+$Comp
+L lib:PCM5102 U1
+U 1 1 5F261B15
+P 4250 2900
+F 0 "U1" H 4878 2504 50  0000 L CNN
+F 1 "PCM5102" H 4878 2413 50  0000 L CNN
+F 2 "lib_fb:rpiPCM5102" H 3850 3450 50  0001 C CNN
+F 3 "" H 3850 3450 50  0001 C CNN
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 3800
+NoConn ~ 3800 3700
+NoConn ~ 3800 3600
+NoConn ~ 3800 3500
+NoConn ~ 3800 3400
+NoConn ~ 3800 3300
+NoConn ~ 3800 3200
+NoConn ~ 3800 3100
+NoConn ~ 3800 3000
+Wire Wire Line
+	6200 4600 6300 4600
+Connection ~ 6300 4600
+Wire Wire Line
+	6300 4600 6400 4600
+Connection ~ 6400 4600
+Wire Wire Line
+	6400 4600 6500 4600
+Connection ~ 6500 4600
+Wire Wire Line
+	6500 4600 6600 4600
+Connection ~ 6600 4600
+Wire Wire Line
+	6600 4600 6700 4600
+Connection ~ 6700 4600
+Wire Wire Line
+	6700 4600 6800 4600
+Connection ~ 6800 4600
+Wire Wire Line
+	6800 4600 6900 4600
+NoConn ~ 5800 3200
+Wire Wire Line
+	5800 4250 5800 4600
+Wire Wire Line
+	5800 4600 6050 4600
+Connection ~ 6200 4600
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F2B2628
+P 5800 5000
+F 0 "#FLG0101" H 5800 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 5173 50  0000 C CNN
+F 2 "" H 5800 5000 50  0001 C CNN
+F 3 "~" H 5800 5000 50  0001 C CNN
+	1    5800 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 5000 5800 4600
+Connection ~ 5800 4600
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F2B7381
+P 6100 1750
+F 0 "#FLG0102" H 6100 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 1923 50  0000 C CNN
+F 2 "" H 6100 1750 50  0001 C CNN
+F 3 "~" H 6100 1750 50  0001 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1750 6100 2000
+Connection ~ 6100 2000
+Wire Wire Line
+	6100 2000 6400 2000
+Wire Wire Line
+	4250 2800 4250 2200
+Wire Wire Line
+	4250 2200 3900 2200
+Wire Wire Line
+	3900 2200 3900 2300
+Wire Wire Line
+	4650 2800 4650 2200
+Wire Wire Line
+	4650 2200 4250 2200
+Connection ~ 4250 2200
+$Comp
+L power:GND #PWR0101
+U 1 1 5F2CB991
+P 6050 4600
+F 0 "#PWR0101" H 6050 4350 50  0001 C CNN
+F 1 "GND" H 6055 4427 50  0000 C CNN
+F 2 "" H 6050 4600 50  0001 C CNN
+F 3 "" H 6050 4600 50  0001 C CNN
+	1    6050 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 4600
+Wire Wire Line
+	6050 4600 6200 4600
+$EndSCHEMATC
