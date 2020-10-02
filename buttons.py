@@ -10,7 +10,6 @@ buttonsNum = [26, 24, 21, 19, 23, 32]
 
 def button_pressed(channel):
     print("[buttons.py] button pressed:", channel)
-    subprocess.Popen(['/bin/sh', '/home/pi/pdac/AUTOSTART.sh'])
 def unregister_events():
     for pin in buttons:
         GPIO.remove_event_detect(pin)
