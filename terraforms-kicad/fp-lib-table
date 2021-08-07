@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Terraforms)(type KiCad)(uri ${KIPRJMOD}/Terraforms.pretty)(options "")(descr ""))
+  (lib (name lib_fb)(type KiCad)(uri /Users/gilbert/Code/collektor/kicad/lib_fb.pretty)(options "")(descr ""))
+)
